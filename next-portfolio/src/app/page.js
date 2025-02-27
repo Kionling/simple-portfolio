@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react"; // Importing icons
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false); // State to toggle mobile menu
-
+  
 
   return (
     
@@ -92,6 +92,22 @@ export default function Home() {
         
       </div>
       <div>
+      <div className="h-screen w-full overflow-y-scroll snap-y snap-mandatory scrollbar-none">
+            {/* Section 1 */}
+            <div className="h-screen flex items-center justify-center bg-blue-500 snap-start">
+                <h1 className="text-4xl text-white">Section 1</h1>
+            </div>
+
+            {/* Section 2 */}
+            <div className="h-screen flex items-center justify-center bg-green-500 snap-start">
+                <h1 className="text-4xl text-white">Section 2</h1>
+            </div>
+
+            {/* Section 3 */}
+            <div className="h-screen flex items-center justify-center bg-red-500 snap-start">
+                <h1 className="text-4xl text-white">Section 3</h1>
+            </div>
+        </div>
       
       </div>
        
