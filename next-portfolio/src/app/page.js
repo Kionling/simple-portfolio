@@ -2,20 +2,10 @@
 import { useState, useEffect, useRef} from "react";
 import Head from "next/head";
 import { Menu, X } from "lucide-react"; // Importing icons
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import dynamic from "next/dynamic";
-export default function Home() {
-  const ScrollComponent = dynamic(() => import('./components/sectionWipes'), {
-    ssr: false,
-  });
 
+export default function Home() {
   const [isOpen, setIsOpen] = useState(false); // State to toggle mobile menu
-  const sections = [
-    <div key="section1" className="bg-red-100 h-screen flex items-center justify-center text-white text-4xl panel">Section 1</div>,
-    <div key="section2" className="bg-blue-100 h-screen flex items-center justify-center text-white text-4xl panel">Section 2</div>,
-    <div key="section3" className="bg-green-100 h-screen flex items-center justify-center text-white text-4xl panel">Section 3</div>,
-  ];
+
 
   return (
     
@@ -90,7 +80,7 @@ export default function Home() {
             Hi, my name is
             <h1 className="text-6xl font-bold">Daniel Jauregui</h1>
           </span>
-          <p className="mt-4 text-lg font-bold">
+          <p className="mt-4 text-lg font-bold typing-animation">
             I build modern and scalable applications.
           </p>
         </div>
@@ -102,7 +92,7 @@ export default function Home() {
         
       </div>
       <div>
-      <ScrollComponent />
+      
       </div>
        
       
