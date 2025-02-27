@@ -10,4 +10,3 @@ for recruiters to scan quicker, but display far more information, modularly.
 
 # Authors
 * Daniel Jauregui
-
