@@ -13,13 +13,15 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Daniel Jauregui",
-  description: "A Simplified Portfolio",
+  description: "Software Developer.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <link rel="icon" href="/spartan.svg" sizes="any" />
+
       <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>

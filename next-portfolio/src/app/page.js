@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <div className="">
         {/* Navbar */}
-        <nav className="p-6 flex justify-between items-center max-w-7xl mx-auto ">
+        <nav className="p-7 flex justify-between items-center max-w-7xl mx-auto ">
           <h1 className="text-3xl font-bold">Daniel Jauregui</h1>
 
           {/* Desktop Menu */}
@@ -76,38 +76,37 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 items-center max-w-6xl mx-auto p-6 gap-8">
         {/* Text on the Left */}
         <div className="text-center md:text-left">
-          <span className="font-bold">
+          <span className="font-bold pl-1">
             Hi, my name is
-            <h1 className="text-6xl font-bold">Daniel Jauregui</h1>
+            <h1 className="text-6xl ">Daniel Jauregui</h1>
           </span>
-          <p className="mt-4 text-lg font-bold typing-animation">
+          <p className="mt-4 text-lg font-bold typing-animation p-1">
             I build modern and scalable applications.
           </p>
         </div>
 
         {/* Image on the Right */}
-        <div className="flex justify-center">
+        <div className="photoDiv p-9">
           <img src="dan_comp.jpg" alt="Profile Picture" />
         </div>
         
       </div>
-      <div>
-      <div className="h-screen w-full overflow-y-scroll snap-y snap-mandatory scrollbar-none">
-            {/* Section 1 */}
-            <div className="h-screen flex items-center justify-center bg-blue-500 snap-start">
-                <h1 className="text-4xl text-white">Section 1</h1>
-            </div>
+      
+      <div className="SJSU">
 
-            {/* Section 2 */}
-            <div className="h-screen flex items-center justify-center bg-green-500 snap-start">
-                <h1 className="text-4xl text-white">Section 2</h1>
-            </div>
-
-            {/* Section 3 */}
-            <div className="h-screen flex items-center justify-center bg-red-500 snap-start">
-                <h1 className="text-4xl text-white">Section 3</h1>
-            </div>
+      <div className="grid grid-cols-1 md:grid-cols-1 items-center max-w-6xl mx-auto p-6 gap-8">
+        {/* Text on the Left */}
+        <div className="text-center md:text-left">
+        
+            <h1 className="text-6xl font-bold text-white">Currently pursuing</h1>
+            <p className="font-bold">a Bachelor's in <span>Chemical Engineering.</span></p>
+ 
+        
         </div>
+
+       
+        
+      </div>
       
       </div>
        
