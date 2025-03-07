@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef} from "react";
 import Head from "next/head";
 import { Menu, X } from "lucide-react"; // Importing icons
-
+import { motion } from "framer-motion"
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false); // State to toggle mobile menu
   
@@ -87,6 +87,7 @@ export default function Home() {
 
         {/* Image on the Right */}
         <div className="photoDiv p-9">
+          
           <img src="dan_comp.jpg" alt="Profile Picture" />
         </div>
         
@@ -99,7 +100,18 @@ export default function Home() {
         <div className="text-center md:text-left">
         
             <h1 className="text-6xl font-bold text-white">Currently pursuing</h1>
-            <p className="font-bold">a Bachelor's in <span>Chemical Engineering.</span></p>
+            <p className="font-bold pl-2">a Bachelor's in <span>Chemical Engineering.</span></p>
+            <div className="text-center text-2xl font-bold mt-20">
+            This is a{" "}
+            <motion.span
+                whileHover={{ scale: 1.5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="text-blue-500 cursor-pointer inline-block"
+            >
+                cool
+            </motion.span>{" "}
+            word.
+        </div>
  
         
         </div>
